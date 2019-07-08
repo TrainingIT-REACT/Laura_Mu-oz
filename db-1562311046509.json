@@ -1,0 +1,226 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "El azogue",
+      "artist": "Marea",
+      "cover": "/images/azogue.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Besos de perro",
+      "artist": "Marea",
+      "cover": "/images/besosdp.jpg"
+    },
+    {
+      "id": 3,
+      "name": "28.000 puñaladas",
+      "artist": "Marea",
+      "cover": "/images/28p.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Revolcon",
+      "artist": "Marea",
+      "cover": "/images/revolcon.jpg"
+    },
+    {
+      "id": 5,
+      "name": "La voz del amo",
+      "artist": "Hora Zulú",
+      "cover": "/images/lavoz.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Creer Querer, Querer Creer",
+      "artist": "Hora Zulú",
+      "cover": "/images/creer.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Me duele la boca de decirlo",
+      "artist": "Hora Zulú",
+      "cover": "/images/mdb.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Game Over",
+      "artist": "Ska-p",
+      "cover": "/images/GO.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Lagrimas y Gozos",
+      "artist": "Ska-p",
+      "cover": "/images/LG.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Incontrolable",
+      "artist": "Ska-p",
+      "cover": "/images/incontrolable.jpg"
+    }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "name": "En las encías",
+      "audio": "/music/encias.mp3",
+      "seconds": 306,
+      "img": "/images/azogue.jpg",
+      "album_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Ocho mares.",
+      "audio": "/music/8m.mp3",
+      "seconds": 289,
+      "img": "/images/azogue.jpg",
+      "album_id": 1
+    },
+    {
+      "id": 3,
+      "name": "La rueca",
+      "audio": "/music/rueca.mp3",
+      "seconds": 238,
+      "img": "/images/besosdp.jpg",
+      "album_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Que se joda el viento",
+      "audio": "/music/viento.mp3",
+      "seconds": 330,
+      "img": "/images/besosdp.jpg",
+      "album_id": 2
+    },
+    {
+      "id": 5,
+      "name": "La luna me sabe a poco",
+      "audio": "/music/luna.mp3",
+      "seconds": 265,
+      "img": "/images/28p.jpg",
+      "album_id": 3
+    },
+    {
+      "id": 6,
+      "name": "Como el viento de poniente",
+      "audio": "/music/ponmar.mp3",
+      "seconds": 223,
+      "img": "/images/28p.jpg",
+      "album_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Corazon de mimbre",
+      "audio": "/music/cm.mp3",
+      "seconds": 340,
+      "img": "/images/revolcon.jpg",
+      "album_id": 4
+    },
+    {
+      "id": 8,
+      "name": "Duerme conmigo",
+      "audio": "/music/duerme.mp3",
+      "seconds": 217,
+      "img": "/images/revolcon.jpg",
+      "album_id": 4
+    },
+    {
+      "id": 9,
+      "name": "La voz del amo",
+      "audio": "/music/lavoz.mp3",
+      "seconds": 254,
+      "img": "/images/lavoz.jpg",
+      "album_id": 5
+    },
+    {
+      "id": 10,
+      "name": "Es menester",
+      "audio": "/music/menester.mp3",
+      "seconds": 255,
+      "img": "/images/lavoz.jpg",
+      "album_id": 5
+    },
+    {
+      "id": 11,
+      "name": "Toma y obliga",
+      "audio": "/api/music/tyo.mp3",
+      "seconds": 267,
+      "img": "/images/creer.jpg",
+      "album_id": 6
+    },
+    {
+      "id": 12,
+      "name": "Quiero",
+      "audio": "/music/quiero.mp3",
+      "seconds": 113,
+      "img": "/images/creer.jpg",
+      "album_id": 6
+    },
+    {
+      "id": 13,
+      "name": "Agua de mayo",
+      "audio": "/music/aguamayo.mp3",
+      "seconds": 229,
+      "img": "/images/mdb.jpg",
+      "album_id": 7
+    },
+    {
+      "id": 14,
+      "name": "Dice el poniente",
+      "audio": "/music/ponhz.mp3",
+      "seconds": 196,
+      "img": "/images/mdb.jpg",
+      "album_id": 7
+    },
+    {
+      "id": 15,
+      "name": "No lo volveré a hacer más",
+      "audio": "/music/nomas.mp3",
+      "seconds": 289,
+      "img": "/images/GO.jpg",
+      "album_id": 8
+    },
+    {
+      "id": 16,
+      "name": "La fábrica",
+      "audio": "/music/fab.mp3",
+      "seconds": 277,
+      "img": "/images/GO.jpg",
+      "album_id": 8
+    },
+    {
+      "id": 17,
+      "name": "El tercero de la foto",
+      "audio": "/music/3foto.mp3",
+      "seconds": 230,
+      "img": "/images/LG.jpg",
+      "album_id": 9
+    },
+    {
+      "id": 18,
+      "name": "Wild Spain",
+      "audio": "/music/wild.mp3",
+      "seconds": 271,
+      "img": "/images/LG.jpg",
+      "album_id": 9
+    },
+    {
+      "id": 19,
+      "name": "Niño soldado",
+      "audio": "/music/niño.mp3",
+      "seconds": 221,
+      "img": "/images/incontrolable.jpg",
+      "album_id": 10
+    },
+    {
+      "id": 20,
+      "name": "Mis colegas",
+      "audio": "/music/colegas.mp3",
+      "seconds": 258,
+      "img": "/images/incontrolable.jpg",
+      "album_id": 10
+    }
+  ]
+}
