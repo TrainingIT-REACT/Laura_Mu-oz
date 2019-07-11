@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  margin-top: 2em;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.header__title h1 {
+  margin-bottom: 0;
+}
+
+.header__selector button {
+  margin-left: 1em;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu{
+  text-decoration: none;
+  margin: 25px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+button {
+  margin-left: 1em;
+}
+.albImg{
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+#songs{
+  margin-left: 60px;
+}
+.repModal{
+  animation: slide-in 0.15s ease-in;
+  background-color: white;
+  border-radius: 15px;
+  border: 3px solid #e5e5e5;
+  box-shadow: 2px 2px 15px -3px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 50px auto 0;
+  max-width: 360px;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  width: 100%;
+  will-change: transform;
+  z-index: 10;
+}
+
+    
+.back {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+a{
+  color: #3d39da;
+}
+

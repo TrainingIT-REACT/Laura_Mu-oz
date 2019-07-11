@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login render should render all HTML elements 1`] = `
+<div>
+  <h1>
+    Login page 
+  </h1>
+  <form>
+    <div
+      class="form-group"
+    >
+      <label
+        for="exampleInputEmail1"
+      >
+        Username
+      </label>
+      <input
+        aria-describedby="emailHelp"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="Enter email"
+        type="text"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        for="exampleInputPassword1"
+      >
+        Password
+      </label>
+      <input
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <button>
+      Login
+    </button>
+  </form>
+</div>
+`;
