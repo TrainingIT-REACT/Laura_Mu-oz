@@ -50,7 +50,8 @@
     "puppeteer": "^1.18.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "proxy": "http://localhost:3001"
 }
