@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -22,16 +23,6 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
-      {
-        test: /\.(jpg|png)(\?v=\d+\.\d+\.\d+)?$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'images/[name].[hash:base64:5].[ext]',
-            publicPath: '../',
-          }
-        }
-      }
     ]
   },
   plugins: [
@@ -39,6 +30,9 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html"
     }),
+    new CopyPlugin([
+      { from: "server/static", to: "" }
+    ]),
     new WorkboxPlugin.InjectManifest({
       swSrc: './src/sw.js'
     })
