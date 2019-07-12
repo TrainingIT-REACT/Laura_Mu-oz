@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "@babel/polyfill";
 const Reproductor = React.lazy(() => import ('../Reproductor'));
 const AddToList = React.lazy(() => import ('../AddToList'));
 
@@ -22,10 +23,10 @@ class Home extends Component{
         const randAlbum = parseInt(1 + Math.random() * (10 - 1));
         rand = parseInt(3 + Math.random() * (10 - 3));
         try {
-          const res = await fetch(`/songs`);
-          const allAlb = await fetch(`/albums`);
-          const albSongs = await fetch(`/songs?album_id=${randAlbum}`);
-          const albumRand = await fetch(`/albums?id=${randAlbum}`);
+          const res = await fetch(`http://localhost:3001/songs`);
+          const allAlb = await fetch(`http://localhost:3001/albums`);
+          const albSongs = await fetch(`http://localhost:3001/songs?album_id=${randAlbum}`);
+          const albumRand = await fetch(`http://localhost:3001/albums?id=${randAlbum}`);
           const songs = await res.json();
           const recAlb = await albSongs.json();
           const album = await albumRand.json();
@@ -59,7 +60,7 @@ class Home extends Component{
             return(
                 <div>
                     Loading content...
-                    <div class="spinner-border spinner-border-sm" role="status">
+                    <div className="spinner-border spinner-border-sm" role="status">
                     </div>
                 </div>
             );
@@ -72,9 +73,9 @@ class Home extends Component{
                     <div className="row">
                         <div className="col-md-6">
                             <h2>Recommended album</h2>
-                            {this.state.album.map((album) => {
+                            {this.state.album.map((album, i) => {
                                 return(
-                                    <div>
+                                    <div key={i}>
                                         <h3>{album.name}</h3>
                                         <img alt="album-img" src={album.cover} width="150" height="150"/>
                                     </div>

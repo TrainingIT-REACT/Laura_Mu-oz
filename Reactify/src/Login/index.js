@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import {updateUsername} from '../actions/user';
 import {clearList} from '../actions/myList';
 import store from '../store';
+import "@babel/polyfill";
 
 
 const Login = ({updateUsername, clearList}) =>{

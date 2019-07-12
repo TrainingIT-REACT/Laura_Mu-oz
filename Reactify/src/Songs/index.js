@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "@babel/polyfill";
 const Reproductor = React.lazy(() => import ('../Reproductor'));
 const AddToList = React.lazy(() => import ('../AddToList'));
 class Songs extends Component{
@@ -16,8 +17,8 @@ class Songs extends Component{
 
       async componentDidMount() {
         try {
-          const res = await fetch('/songs');
-          const alb = await fetch('/albums');
+          const res = await fetch('http://localhost:3001/songs');
+          const alb = await fetch('http://localhost:3001/albums');
           const json = await res.json();
           const jalb = await alb.json();
           this.setState((prevState) => ({

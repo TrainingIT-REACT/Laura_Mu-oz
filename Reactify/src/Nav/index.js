@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import "@babel/polyfill";
 
 import Home from '../Home';
 import Login from '../Login';

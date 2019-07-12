@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Reproductor from '../Reproductor';
+import "@babel/polyfill";
 
 import AddToList from '../AddToList';
 
@@ -19,7 +20,7 @@ class Album extends Component {
 
     async componentDidMount() {
         try {
-          const res = await fetch(`/songs?album_id=${this.props.album.id}`);
+          const res = await fetch(`http://localhost:3001/songs?album_id=${this.props.album.id}`);
           const json = await res.json();
           this.setState((prevState) => ({
             ...prevState,

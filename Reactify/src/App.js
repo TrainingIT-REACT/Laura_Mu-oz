@@ -1,6 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import "./index.css";
+import "@babel/polyfill";
 
 import store from './store';
 const Nav = React.lazy(() => import('./Nav'));

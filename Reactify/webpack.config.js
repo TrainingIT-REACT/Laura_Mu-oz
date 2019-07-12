@@ -21,6 +21,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(jpg|png)(\?v=\d+\.\d+\.\d+)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'images/[name].[hash:base64:5].[ext]',
+            publicPath: '../',
+          }
+        }
       }
     ]
   },

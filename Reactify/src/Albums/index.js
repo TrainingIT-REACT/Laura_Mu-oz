@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "@babel/polyfill";
 const Album = React.lazy(() => import('../Album'));
 
 
@@ -16,7 +17,7 @@ class Albums extends Component{
 
       async componentDidMount() {
         try {
-          const res = await fetch('/albums');
+          const res = await fetch('http://localhost:3001/albums');
           const json = await res.json();
           this.setState((prevState) => ({
             ...prevState,
